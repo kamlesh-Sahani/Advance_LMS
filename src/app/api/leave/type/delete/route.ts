@@ -1,5 +1,5 @@
-import dbConnect from "@/app/lib/dbConnect";
-import LeaveTypesModel from "@/models/LeaveType.model";
+import dbConnect from "@/src/app/lib/dbConnect";
+import LeaveTypesModel from "@/src/models/LeaveType.model";
 import { NextResponse, NextRequest } from "next/server";
 dbConnect();
 

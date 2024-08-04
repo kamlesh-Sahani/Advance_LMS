@@ -1,9 +1,8 @@
-import dbConnect from "@/app/lib/dbConnect";
-import EmployeeModel from "@/models/Employee.model";
+import dbConnect from "@/src/app/lib/dbConnect";
+import EmployeeModel from "@/src/models/Employee.model";
 import { NextResponse, NextRequest } from "next/server";
 import bcryptjs from "bcryptjs";
 dbConnect();
-
 async function passwordGenerateAndHashing(
   fullName: string,
   contactNumner: string

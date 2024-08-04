@@ -1,7 +1,7 @@
-import EmployeeModel from "@/models/Employee.model";
+import dbConnect from "@/src/app/lib/dbConnect";
+import EmployeeModel from "@/src/models/Employee.model";
 import { NextResponse, NextRequest } from "next/server";
 import bcryptjs from "bcryptjs";
-import dbConnect from "@/app/lib/dbConnect";
 dbConnect();
 async function passwordCompare(plainPassword: string, hashedPassword: string) {
   return await bcryptjs.compare(plainPassword, hashedPassword);

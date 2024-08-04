@@ -1,8 +1,9 @@
-import dbConnect from "@/app/lib/dbConnect";
-import LeaveBalanceModel from "@/models/LeaveBalance.model";
-import LeaveApplicationModel from "@/models/LeaveApplication.model";
+import LeaveBalanceModel from "@/src/models/LeaveBalance.model";
 import { NextResponse,NextRequest } from "next/server";
-import LeaveTypesModel from "@/models/LeaveType.model";
+import LeaveTypesModel from "@/src/models/LeaveType.model";
+import dbConnect from "@/src/app/lib/dbConnect";
+import LeaveApplicationModel from "@/src/models/LeaveApplication.model";
+import LeaveApprovalModel from "@/src/models/LeaveApproval.model";
 dbConnect();
 
 export async function POST(req:NextRequest){

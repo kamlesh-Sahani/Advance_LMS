@@ -1,5 +1,5 @@
-import dbConnect from "@/app/lib/dbConnect";
-import DepartmentModel from "@/models/Department.model";
+import dbConnect from "@/src/app/lib/dbConnect";
+import DepartmentModel from "@/src/models/Department.model"
 import { NextRequest, NextResponse } from "next/server";
 
 dbConnect();

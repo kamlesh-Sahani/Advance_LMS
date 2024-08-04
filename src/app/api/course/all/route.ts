@@ -1,5 +1,5 @@
-import dbConnect from "@/app/lib/dbConnect";
-import CourseModel from "@/models/Course.model";
+import CourseModel from "@/src/models/Course.model";
+import dbConnect from "@/src/app/lib/dbConnect";
 import {NextResponse} from 'next/server'
 
 dbConnect();

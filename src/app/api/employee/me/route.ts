@@ -1,6 +1,6 @@
-import dbConnect from "@/app/lib/dbConnect";
-import { getDataFromCookie } from "@/app/lib/getDataFromCookie";
-import EmployeeModel from "@/models/Employee.model";
+import dbConnect from "@/src/app/lib/dbConnect";
+import { getDataFromCookie } from "@/src/app/lib/getDataFromCookie";
+import EmployeeModel from "@/src/models/Employee.model";
 import { NextResponse,NextRequest } from "next/server";
 
 dbConnect();
