@@ -1,22 +1,4 @@
-// import { columns } from '@/app/user/leaveshistory/columns'
-// import { DataTable } from '@/app/user/leaveshistory/data-table'
-// import { getData } from '@/constants/leavesdata'
-// import { cn } from '@/lib/utils'
-// import React from 'react'
-
-// const ListLeave = ({className}:{className:string}) => {
-//   const data =  getData();
-//   return (
-//     <div className={cn("py-5 max-h-screen pb-10", className)}>
-//       <DataTable columns={columns} data={data.filter(d=>d.id<8)}/>
-//     </div>
-//   )
-// }
-
-// export default ListLeave
-
-
-
+"use client";
 import { useEffect, useState } from 'react';
 import { columns } from '@/src/app/user/leaveshistory/columns';
 import { DataTable } from '@/src/app/user/leaveshistory/data-table';
@@ -26,7 +8,6 @@ import React from 'react';
 
 const ListLeave = ({ className }:{className:string}) => {
   const [data, setData] = useState([{}]);
-
   useEffect(() => {
     const fetchData =  () => {
       const result =  getData();
